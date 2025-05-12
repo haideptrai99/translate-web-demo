@@ -27,8 +27,7 @@
     git clone <your-repository-url>
     cd <repository-folder>
     ```
-2.  **Chuẩn bị Icons:** Tạo các file ảnh `icon16.png`, `icon48.png`, `icon128.png` và đặt chúng vào thư mục `icons/`.
-3.  **Tải Extension vào Chrome:**
+2.  **Tải Extension vào Chrome:**
     * Mở trình duyệt Chrome và truy cập `chrome://extensions/`.
     * Bật **"Chế độ dành cho nhà phát triển"** (Developer mode) ở góc trên bên phải.
     * Nhấp vào nút **"Tải tiện ích đã giải nén"** (Load unpacked).
