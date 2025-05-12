@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Cấu hình API Dịch (OpenAI)</title>
+  <meta charset="UTF-8">
+  <style>
+    body { font-family: Arial, sans-serif; padding: 20px; max-width: 500px; margin: auto; background-color: #f4f4f4; }
+    h1 { text-align: center; color: #333; }
+    .container { background-color: #fff; padding: 25px; border-radius: 8px; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
+    label { display: block; margin-bottom: 8px; font-weight: bold; color: #555; }
+    input[type="text"], input[type="password"], select {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 20px;
+      box-sizing: border-box;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+    }
+    button {
+      background-color: #007bff;
+      color: white;
+      padding: 10px 15px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 16px;
+      width: 100%;
+    }
+    button:hover { background-color: #0056b3; }
+    #status { margin-top: 20px; text-align: center; font-weight: bold; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Cấu hình API Dịch thuật (OpenAI)</h1>
+    <p style="text-align: center; color: #666; margin-bottom: 20px;">Nhập thông tin API OpenAI bạn muốn sử dụng.</p>
+
+    <label for="apiUrl">URL của API (Mặc định cho OpenAI):</label>
+    <input type="text" id="apiUrl" placeholder="https://api.openai.com/v1/chat/completions">
+
+    <label for="apiKey">OpenAI API Key:</label>
+    <input type="password" id="apiKey" placeholder="Nhập API Key của bạn (ví dụ: sk-...)">
+
+    <label for="apiModel">Model OpenAI (ví dụ: gpt-3.5-turbo, gpt-4, gpt-4-turbo):</label>
+    <input type="text" id="apiModel" placeholder="gpt-3.5-turbo">
+
+    <button id="saveButton">Lưu cấu hình</button>
+    <div id="status"></div>
+  </div>
+  <script src="options.js"></script>
+</body>
+</html>
