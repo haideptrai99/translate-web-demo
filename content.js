@@ -209,7 +209,7 @@ chrome.runtime.onMessage.addListener((request, sender, sendResponse) => {
         }
          // Cảnh báo nếu số lượng không khớp (do đã bỏ check ở background)
         if(request.translatedTexts.length !== textNodesFound.length) {
-            console.warn(`Cảnh báo: Số lượng bản dịch nhận được (${request.translatedTexts.length}) không khớp số lượng nút gốc (${textNodesFound.length}). Kết quả hiển thị có thể bị sai lệch.`);
+            console.log(`Cảnh báo: Số lượng bản dịch nhận được (${request.translatedTexts.length}) không khớp số lượng nút gốc (${textNodesFound.length}). Kết quả hiển thị có thể bị sai lệch.`);
             // Không alert ở đây vì người dùng đã yêu cầu bỏ check, chỉ log cảnh báo
         }
 
@@ -231,7 +231,7 @@ chrome.runtime.onMessage.addListener((request, sender, sendResponse) => {
                      parentsToModifyFont.add(parentElement);
                  }
             } else {
-                 console.warn(`Bỏ qua nút ${i}: Node không tồn tại hoặc bản dịch không hợp lệ.`);
+                 console.log(`Bỏ qua nút ${i}: Node không tồn tại hoặc bản dịch không hợp lệ.`);
             }
         }
 
